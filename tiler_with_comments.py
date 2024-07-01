@@ -43,7 +43,7 @@ if __name__ == "__main__":  # code only runs if script is executed directly
             VectorLayer( # mojadata.layer.vectorlayer
                 "bbox",
                 os.path.join(layer_root, "inventory", "inventory.shp"), # layers\raw\inventory\inventory.shp
-                Attribute("PolyID")),  # mojadata.layer.attribute
+                Attribute("PolyID")),  # column PolyID of inventory.shp
             pixel_size=0.00025)  # pixel size for bounding box
 
         tiler = GdalTiler2D(bbox, use_bounding_box_resolution=True)  # mojadata.gdaltiler2d
